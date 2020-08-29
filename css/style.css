@@ -1,0 +1,25 @@
+:root{
+	/* Colores */
+	--cPrincipal:#444444;
+	--cSecundario:#9F9E9E;
+	--cBack:#F3F3F3;
+	--cResalte:#EB4C4C;
+	--cVartabla:#E9E9E9;
+
+	--cNikken:#e9c46a;
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: var(--cResalte);
+}
+
+footer{
+	background-color: var(--cPrincipal);
+	color: var(--cBack);
+	padding: 1em;
+	height: 100vh;
+}
+
+footer a {
+	color: var(--cBack);
+}
