@@ -1,12 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+
+
 :root{
 	/* Colores */
 	--cPrincipal:#444444;
 	--cSecundario:#9F9E9E;
 	--cBack:#F3F3F3;
 	--cResalte:#EB4C4C;
-	--cVartabla:#E9E9E9;
 
 	--cNikken:#e9c46a;
+
+	/* Fuentes */
+	--texto:'Roboto', sans-serif;
+}
+
+body, html{
+	scroll-behavior: smooth;
+}
+
+body{
+	font-family: var(--texto);
+	color: var(--cPrincipal);
+	
 }
 
 .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
@@ -18,10 +33,6 @@
 .nav-link {
 	font-weight: bold;
 }
-
-
-
-
 
 
 footer{
@@ -38,6 +49,73 @@ footer a {
 
 
 /* ********** My Styles ********** */
+
+.text-rojo {
+	color:var(--cResalte);
+}
+
+.texto-gris {
+	color:var(--cSecundario);
+}
+
+.back-gris {
+	background-color: var(--cBack);
+}
+
+.titulo {
+	font-size: 2.4em;
+	font-weight: bold;
+}
+
+.btn-rojo {
+	background-color: var(--cResalte);
+	text-decoration: none;
+	text-align: center;
+	color: #fff;
+}
+
+.btn-rojo:hover {
+	background-color: var(--cPrincipal);
+	transition: 400ms all ease-in-out;
+	text-decoration: none;
+	color: #fff;
+}
+
+.proyecto1_cover,
+.proyecto2_cover,
+.proyecto3_cover,
+.proyecto4_cover{
+	background-image: url(../img/portada_proyecto1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+}
+
+.proyecto2_cover{
+	background-image: url(../img/portada_proyecto2.jpg);
+}
+
+.proyecto3_cover{
+	background-image: url(../img/portada_proyecto3.jpg);
+}
+
+.proyecto4_cover{
+	background-image: url(../img/portada_proyecto4.jpg);
+}
+
+.descripcion{
+	font-size: 3em;
+}
+
+.tamano-img{
+	width: 28%;
+}
+
+.back-contenido{
+	background-color: var(--cNikken);
+	border-radius: 5%;
+	height: 60%;
+}
 
 /* ********** MediaQueries ********** */
 /* Small devices (landscape phones, 576px and up) */
